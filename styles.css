@@ -1186,6 +1186,126 @@ footer {
 }
 
 @media (max-width: 1200px) {
+  .hero {
+    box-sizing: border-box;
+    max-width: 1200px;
+  }
+  .container {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .hero-content {
+    max-width: 40%;
+    margin: 0;
+    text-align: center;
+  }
+  .offer-badge {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .hero-title-accent-animate {
+    display: inline-block;
+    height: 72px;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+  }
+  .accent-slides-container {
+    position: relative;
+    width: 100%;
+  }
+  .accent-ordered {
+    font-size: 3rem;
+    height: 72px;
+    color: #fd273b;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+    text-align: left;
+    color: #000;
+  }
+  .accent-delivered {
+    font-size: 3rem;
+    height: 72px;
+    color: #2ad427;
+  }
+  @keyframes slideAccent {
+    0%,
+    20% {
+      transform: translateY(0);
+    }
+    33%,
+    53% {
+      transform: translateY(-72px);
+    }
+    66%,
+    86% {
+      transform: translateY(-144px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .accent-shipped {
+    font-size: 3rem;
+    height: 72px;
+    color: #7b2cbf;
+  }
+  .hero-image {
+    box-sizing: border-box;
+    max-width: 45%;
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .ellipse-bg {
+    width: 380px;
+    left: 60vh;
+    transform: translate(-50%, -50%);
+  }
+  .hero-image > img {
+    width: 455px;
+    height: auto;
+    left: 22vh;
+    top: 10vh;
+  }
+  .testimonial {
+    width: 90%;
+    height: 75px;
+    max-width: 400px;
+    /* position: relative; */
+    /* margin: 0 auto; */
+    left: 360px;
+    bottom: 45px;
+  }
+  .testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+  }
+  .testimonial-content {
+    flex: 1;
+  }
+  .testimonial-name {
+    font-size: 14px;
+  }
+  .testimonial-text {
+    font-size: 12px;
+  }
   .deals-products-container {
     width: 100%;
     max-width: 100vw;
@@ -1194,6 +1314,25 @@ footer {
   }
   .deal-product-card {
     max-width: 100%;
+  }
+  .testimonials-section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .testimonials-container {
+    padding: 10px 20px;
+  }
+  .testimonials-wrapper {
+    gap: 20px;
+  }
+  .testimonial-card {
+    max-width: 340px;
+  }
+  .testimonial-quote {
+    font-size: 18px;
+  }
+  .deal-badge {
+    left: 95px;
   }
 }
 
@@ -1355,14 +1494,17 @@ footer {
   }
   .hero-title {
     width: 100%;
+    text-align: center;
     font-size: 2.2rem;
   }
   .hero-subtitle {
     font-size: 1.1rem;
+    text-align: center;
   }
   .offer-badge {
     font-size: 1rem;
     width: 90%;
+    text-align: center;
     min-width: 0;
     padding: 8px 10px;
   }
@@ -1377,7 +1519,7 @@ footer {
   }
   .hero-image > img {
     width: 100%;
-    max-width: 400px;
+    max-width: 345px;
     height: auto;
     position: static;
   }
@@ -1386,12 +1528,13 @@ footer {
     max-width: 350px;
     height: 200px;
     left: 50%;
-    top: 30%;
+    top: 44%;
     transform: translate(-50%, -30%);
   }
   .testimonial {
-    position: static;
+    /* position: static; */
     margin: 24px auto 0 auto;
+    bottom: -25px;
     width: 100%;
     max-width: 350px;
     left: 0;
