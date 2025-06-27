@@ -2047,9 +2047,17 @@ footer {
     height: 120px;
   }
   .testimonial {
-    max-width: 95vw;
+    left: 125px;
+    height: 52px;
+    max-width: 48vw;
     padding: 10px;
     font-size: 0.95rem;
+  }
+  .testimonial-name {
+    font-size: 12px;
+  }
+  .testimonial-text {
+    font-size: 10px;
   }
   .deals-products-container {
     flex-direction: column;
@@ -2144,6 +2152,12 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .testimonial {
+    max-width: 60vw 328.4px;
+    left: 90px;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
   body,
   .hero-title,
   .hero-subtitle,
@@ -2172,6 +2186,19 @@ footer {
   }
   .btn-bg {
     width: 160px;
+  }
+  .hero-image > img {
+    width: 100%;
+    max-width: 253px;
+    height: auto;
+    position: static;
+  }
+  .testimonial,
+  .testimonial-card {
+    width: 100% !important;
+    min-width: 0;
+    left: 45px;
+    padding: 10px !important;
   }
   .logo {
     font-size: 1rem;
