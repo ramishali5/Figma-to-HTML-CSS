@@ -553,7 +553,6 @@ nav a {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  width: 100%;
   max-width: 607.75px;
   max-height: 304.8800048828125px;
 }
@@ -647,6 +646,8 @@ nav a {
 
 .deal-img-container {
   position: relative;
+  width: 90%;
+  padding: 18px 0;
   overflow: hidden;
 }
 .medical-products {
@@ -1436,7 +1437,7 @@ footer {
     font-size: 18px;
   }
   .deal-badge {
-    left: 95px;
+    left: 15px;
   }
   .medical-product-card {
     min-width: 580px;
@@ -1480,7 +1481,7 @@ footer {
     border-radius: 20px;
   }
   .deal-img-container {
-    width: 100%;
+    width: 90%;
     padding: 18px 0;
   }
   .deal-product-img {
@@ -2401,7 +2402,6 @@ footer {
   .trending-title,
   .product-card p,
   .medical-product-name,
-  .medical-price,
   .shop-now-link,
   .polygon-title,
   .polygon-subtitle,
@@ -2503,10 +2503,6 @@ footer {
   }
 }
 
-.deal-img-container {
-  position: relative;
-  overflow: hidden;
-}
 @media (max-width: 350px) {
   .btn-bg,
   .input-search {
@@ -2575,6 +2571,37 @@ footer {
     overflow: hidden;
     position: relative;
     width: auto;
+  }
+  .medical-products-title {
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 10px;
+  }
+  .medical-price {
+    font-size: 9px;
+    line-height: 6px;
+  }
+  .shop-now-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #184363;
+    color: white;
+    text-decoration: none;
+    font-family: Outfit;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 72px;
+    transition: all 0.3s ease;
+    width: 96px;
+    height: 25px;
+  }
+  .med-btn-text {
+    font-size: 9px;
+    line-height: 6px;
   }
   @keyframes slideAccent {
     0%,
